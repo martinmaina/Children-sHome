@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="952.0" styleClass="mainFxmlClass" stylesheets="@../Resources/css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+   <children>
+      <BorderPane prefHeight="685.0" prefWidth="952.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar prefHeight="90.0" prefWidth="952.0" stylesheets="@../Resources/css/style.css" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu fx:id="userMenu" mnemonicParsing="false" style="-fx-text-fill: #ffffff;" text="User">
+                  <items>
+                    <MenuItem fx:id="volunteers" mnemonicParsing="false" onAction="#volunteersAction" text="Volunteers" />
+                        <MenuItem fx:id="contacts" mnemonicParsing="false" onAction="#contactsAction" text="Contacts" />
+                        <MenuItem fx:id="kidsCorner" mnemonicParsing="false" onAction="#childrenAction" text="Kids Corner" />
+                        <MenuItem fx:id="donations" mnemonicParsing="false" onAction="#donationsAction" text="Donations" />
+                  </items>
+                </Menu>
+                <Menu fx:id="closeMenu" mnemonicParsing="false" style="-fx-fill-folor: #ffffff;" text="Close">
+                  <items>
+                    <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitAction" text="Exit" />
+                  </items>
+                </Menu>
+                <Menu fx:id="adminMenu" mnemonicParsing="false" style="-fx-fill-folor: #ffffff;" text="Admin">
+                  <items>
+                    <MenuItem fx:id="staff" mnemonicParsing="false" onAction="#staffAction" text="Staff" />
+                        <MenuItem fx:id="adoption" mnemonicParsing="false" onAction="#adoptionAction" text="Adoption" />
+                        <MenuItem fx:id="fostering" mnemonicParsing="false" onAction="#fosteringAction" text="Fostering" />
+                        <MenuItem fx:id="children" mnemonicParsing="false" onAction="#childrenAction" text="Children" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <left>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button id="vbutton" fx:id="staffbtn" alignment="BOTTOM_LEFT" contentDisplay="TOP" mnemonicParsing="false" onAction="#staffbtnAction" prefHeight="100.0" prefWidth="150.0" stylesheets="@../Resources/css/style.css" text="Staff">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="105.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resources/icons/member2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="vbutton" fx:id="adoptionbtn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#adoptionbtnAction" prefHeight="100.0" prefWidth="150.0" stylesheets="@../Resources/css/style.css" text="Adoption" textAlignment="CENTER">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="105.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resources/icons/adoption.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="vbutton" fx:id="fosteringbtn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#fosteringbtnAction" prefHeight="100.0" prefWidth="150.0" stylesheets="@../Resources/css/style.css" text="Fostering" textAlignment="CENTER">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="105.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resources/icons/foster.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="vbutton" fx:id="staffmenubtn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#staffmenubtnAction" prefHeight="143.0" prefWidth="134.0" stylesheets="@../Resources/css/style.css" text="Staff Menu" textAlignment="CENTER">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="119.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resources/icons/administrator-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <StackPane fx:id="motherPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: none;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="mText" fill="#01bbff" strokeType="OUTSIDE" strokeWidth="0.0" text="Great Mercy Children's Home" wrappingWidth="205.5458984375" />
+               </children></StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
