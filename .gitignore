@@ -36,6 +36,6 @@ build.xml
 
 
 # Images 
-*.jpg
-*.png
-*.jpeg
+**.jpg
+**.png
+**.jpeg
