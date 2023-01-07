@@ -28,8 +28,8 @@ dist/
 build/
 nbproject/
 test/
-src/Resources/
-src/Libbraries/
+Resources/
+Libraries/
 
 build.xml
 *.mf
