@@ -28,8 +28,14 @@ dist/
 build/
 nbproject/
 test/
-
+src/Resources/
+src/Libbraries/
 
 build.xml
 *.mf
 
+
+# Images 
+*.jpg
+*.png
+*.jpeg
